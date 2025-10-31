@@ -72,3 +72,18 @@ Solution_of_the_system_of_Equations=np.matmul(Inv_of_Cofficient_Matrix,Column_Ma
 print("Solution of the system of Equations using GUASS JORDAN")
 print(Solution_of_the_system_of_Equations)
 
+
+Question7::
+import numpy as np
+NR=int(input("Enter the numberof rows:"))
+NC=int(input("Enter the number of columns:"))
+print("Enter the entries in a single line (seperated by space):")
+entries = list(map(int,input().split()))
+rank=np.linalg.matrix_rank(matrix)
+num_vectors=vectors.shape{0}
+print("Matrix X is as follows", '\n',matrix)
+print("The rank of a matrix is :" , np.linalg.matrix_rank(matrix))
+if rank==num_vectors :
+    print("the vectors are linearly independent")
+else:
+    print("the vectors are linearly dependent")
