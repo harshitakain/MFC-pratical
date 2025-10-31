@@ -53,7 +53,7 @@ print("Coefficient Matrix(A)is as follows:",'\n',Coefficients_Matrix,"\n")
 
 
 
-##Questin5::
+# Questin5::
 from numpy import linalg
 import numpy as np
 print("Enter the Dimension of coefficients matrix(A):")
