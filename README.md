@@ -1,5 +1,5 @@
-# MFC-pratical
-QUESTION1:
+## MFC-pratical
+# QUESTION1:
 import numpy as np
 NR = int(input("Enter the number of Rows:"))
 NC = int(input("Enter the number of columbs:"))
@@ -12,7 +12,7 @@ print("The transpose of Matrix X is as follows:",'\n',np.transpose(matrix))
 
 
 
-Question2:
+# Question2:
 import numpy as np
 NR = int(input("Enter the number of Rows:"))
 NC = int(input("Enter the number of columbs:"))
@@ -23,7 +23,7 @@ print("Matrix X is as follows", '\n',matrix)
 print("The rank of a matrix is :" , np.linalg.matrix_rank(matrix))
 
 
-Question3:
+# Question3:
 import numpy as np
 NR = int(input("Enter the number of Rows:"))
 NC = int(input("Enter the number of columbs:"))
@@ -40,7 +40,7 @@ print("The Determinant of a Matrix is:"'\n',Determinant_of_matrix)
 
 
 
-QUESTION4::
+# QUESTION4::
 import numpy as np
 print("Enter the dimension of coefficientmatrix(A):")
 NR = int(input("Enter the number of rows :"))
