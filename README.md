@@ -49,3 +49,26 @@ print("Enter the elements of coefficients of matrix(A) in single line(seperated 
 Coefficients_Entries = list(map(float,input().split()))
 Coefficients_Matrix = np.array(Coefficients_Entries).reshape(NR,NC)
 print("Coefficient Matrix(A)is as follows:",'\n',Coefficients_Matrix,"\n")
+
+
+
+
+Questin5::
+from numpy import linalg
+import numpy as np
+print("Enter the Dimension of coefficients matrix(A):")
+NR=int(input("Enter the numberof rows:"))
+NC=int(input("Enter the number of columns:"))
+print("Enter the  elements of coefficients matrix(A) in a single line (seperated by space):")
+Coefficients_of_Entries = list(map(float,input().split()))
+Coefficient_Matrix = np.array(Coefficients_Entries).reshape(NR,NC)
+print("Coefficient Matrix(A)is as follows",'\n',Coefficient_Matrix,"\n")
+print("Enter the Elements of column matrix(B) in single line(seperated by space):")
+Column_Entries = list(map(float,input().split()))
+Column_Matrix = np.array(column_Entries).reshape(NR,1)
+print("Column Matrix(B) is as follows:",'\n',Column_Matrix,"\n")
+Inv_of_Coefficient_Matrix = linalg.inv(Coefficient_Matrix)
+Solution_of_the_system_of_Equations=np.matmul(Inv_of_Cofficient_Matrix,Column_Matrix)
+print("Solution of the system of Equations using GUASS JORDAN")
+print(Solution_of_the_system_of_Equations)
+
